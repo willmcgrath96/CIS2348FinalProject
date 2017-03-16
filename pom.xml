@@ -37,7 +37,7 @@
         </dependency>
     </dependencies>
 
-
+<!-- This section copies the fxml files to correct location when the code is built -->
     <build>
         <resources>
             <resource>
