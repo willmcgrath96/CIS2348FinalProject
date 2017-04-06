@@ -1,5 +1,5 @@
 # Database and JavaFx Project Template
-asfasdf
+
 Create a fork of this project as a starting point for any project that we do involving JavaFX or databases.
 
 The template is based on Maven, allowing us to easily install additional Java libraries. The pom.xml file used
