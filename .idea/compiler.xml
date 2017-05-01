@@ -17,14 +17,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cis2348-db-starter" />
+        <module name="cis2348-project" />
         <module name="JavaFXStarterProject" />
         <module name="SemesterProject" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="cis2348-db-starter" target="1.5" />
-      <module name="JavaFXStarterProject" target="1.5" />
-      <module name="SemesterProject" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="cis2348-project" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

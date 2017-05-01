@@ -8,6 +8,11 @@
     <artifactId>JavaFxStarterApplication</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <flyway.version>4.0.3</flyway.version>
+        <database.url>jdbc:h2:db.h2.db</database.url>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -48,6 +53,21 @@
                 </includes>
             </resource>
         </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>${flyway.version}</version>
+                <configuration>
+                    <sqlMigrationSeparator>__</sqlMigrationSeparator>
+                    <locations>
+                        <location>filesystem:src/main/resources/db/migration</location>
+                    </locations>
+                    <url>${database.url}</url>
+                </configuration>
+            </plugin>
+        </plugins>
+
     </build>
 
 </project>
